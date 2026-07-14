@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lumio Flow</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter,sans-serif;
+}
+
+body{
+background:#f8fbff;
+color:#222;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.85);
+backdrop-filter:blur(15px);
+box-shadow:0 2px 15px rgba(0,0,0,.05);
+z-index:999;
+}
+
+.logo{
+font-size:28px;
+font-weight:800;
+color:#2563eb;
+}
+
+nav a{
+margin-left:30px;
+text-decoration:none;
+color:#555;
+transition:.3s;
+}
+
+nav a:hover{
+color:#2563eb;
+}
+
+.hero{
+
+padding:180px 8% 120px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:60px;
+}
+
+.left{
+flex:1;
+}
+
+.left h1{
+
+font-size:64px;
+line-height:1.1;
+margin-bottom:25px;
+
+}
+
+.left span{
+
+color:#2563eb;
+
+}
+
+.left p{
+
+font-size:18px;
+line-height:1.8;
+color:#666;
+margin-bottom:40px;
+
+}
+
+button{
+
+padding:16px 34px;
+border:none;
+border-radius:40px;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+margin-right:15px;
+
+}
+
+.primary{
+
+background:#2563eb;
+color:white;
+
+}
+
+.primary:hover{
+
+background:#1d4ed8;
+transform:translateY(-3px);
+
+}
+
+.secondary{
+
+background:white;
+border:1px solid #ddd;
+
+}
+
+.secondary:hover{
+
+background:#f2f2f2;
+
+}
+
+.right{
+
+flex:1;
+text-align:center;
+
+}
+
+.right img{
+
+width:100%;
+max-width:560px;
+border-radius:25px;
+box-shadow:0 20px 60px rgba(0,0,0,.12);
+
+}
+
+.features{
+
+padding:80px 8%;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card h3{
+
+margin:20px 0;
+
+}
+
+.card p{
+
+color:#666;
+line-height:1.8;
+
+}
+
+.stats{
+
+padding:90px 8%;
+display:flex;
+justify-content:center;
+gap:90px;
+text-align:center;
+flex-wrap:wrap;
+
+}
+
+.stats h2{
+
+font-size:48px;
+color:#2563eb;
+
+}
+
+.cta{
+
+padding:100px 8%;
+text-align:center;
+
+}
+
+.box{
+
+background:linear-gradient(135deg,#2563eb,#60a5fa);
+
+padding:70px;
+
+border-radius:30px;
+
+color:white;
+
+}
+
+.box h2{
+
+font-size:42px;
+margin-bottom:20px;
+
+}
+
+.box p{
+
+opacity:.9;
+margin-bottom:35px;
+
+}
+
+.box button{
+
+background:white;
+color:#2563eb;
+font-weight:600;
+
+}
+
+footer{
+
+padding:40px;
+text-align:center;
+color:#888;
+
+}
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.left h1{
+
+font-size:44px;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Lumio Flow</div>
+
+<nav>
+
+<a href="#">Features</a>
+
+<a href="#">Solutions</a>
+
+<a href="#">Pricing</a>
+
+<a href="#">Support</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="left">
+
+<h1>
+Work Smarter.<br>
+<span>Grow Faster.</span>
+</h1>
+
+<p>
+
+Lumio Flow is an all-in-one productivity platform that helps
+teams organize projects, automate workflows,
+and collaborate effortlessly.
+
+</p>
+
+<button class="primary">
+
+Start Free
+
+</button>
+
+<button class="secondary">
+
+Book Demo
+
+</button>
+
+</div>
+
+<div class="right">
+
+<img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?w=1200&q=80">
+
+</div>
+
+</section>
+
+<section class="features">
+
+<div class="card">
+
+<h3>⚡ Smart Automation</h3>
+
+<p>
+Automate repetitive work with intelligent workflows.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>☁ Cloud Workspace</h3>
+
+<p>
+Access your projects securely from any device.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📈 Real-time Analytics</h3>
+
+<p>
+Track team performance with beautiful dashboards.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🤝 Team Collaboration</h3>
+
+<p>
+Work together seamlessly with live updates.
+</p>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div>
+
+<h2>120K+</h2>
+
+<p>Users Worldwide</p>
+
+</div>
+
+<div>
+
+<h2>180+</h2>
+
+<p>Countries</p>
+
+</div>
+
+<div>
+
+<h2>99.99%</h2>
+
+<p>Service Uptime</p>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<div class="box">
+
+<h2>Ready to Boost Productivity?</h2>
+
+<p>
+
+Join thousands of companies using Lumio Flow every day.
+
+</p>
+
+<button>
+
+Start Free Today
+
+</button>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Lumio Flow. All Rights Reserved.
+
+</footer>
+
+</body>
+</html>
